@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--red);
+  height: 180px;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--brown);
+
+  .content {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .title {
+    font-size: 2.8rem;
+    border-radius: 15px;
+    transition: 2s;
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+  a {
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 2s;
+    padding-bottom: 10px;
+
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+  .logo {
+    margin: 0 auto;
+    max-width: 120px;
+    max-height: 120px;
+
+    img {
+      padding: 8px;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
